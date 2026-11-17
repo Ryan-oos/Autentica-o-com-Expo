@@ -1,12 +1,44 @@
 # Dependências
 node_modules/
+jspm_packages/
+web_modules/
+bower_components
 
 # Variáveis de ambiente (SENHAS, TOKENS, SECRETS)
 .env
+.env.*
+!.env.example
 
 # Logs
+logs
 *.log
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage
+*.lcov
+.nyc_output
+
+# Compiled binary addons
+build/Release
+
+# Caches
+.npm
+.eslintcache
+.stylelintcache
+.cache
+.parcel-cache
+.turbo
+.nx/cache
 
 # Sistema operacional
 Thumbs.db
@@ -14,6 +46,7 @@ Thumbs.db
 
 # IDE
 .vscode/
+.vscode-test
 .idea/
 
 # Expo
@@ -24,3 +57,18 @@ web-build/
 # Arquivos temporários
 *.tmp
 *.swp
+*.tgz
+*.tsbuildinfo
+
+# Yarn
+.yarn-integrity
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# pnpm
+.pnpm-store
